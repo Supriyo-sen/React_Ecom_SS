@@ -15,9 +15,6 @@ const filterReducer = (state, action) => {
       // );
 
       let maxPrice = Math.max(...priceArr);
-      console.log(
-        maxPrice
-      );
       return {
         ...state,
         filter_products: [...action.payload],
@@ -119,7 +116,7 @@ const filterReducer = (state, action) => {
       }
       if(price === 0){
         tempFilterProduct = tempFilterProduct.filter(
-          (c) => c.price == price
+          (c) => c.price === price
         )
       }else{
         tempFilterProduct = tempFilterProduct.filter(
