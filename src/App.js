@@ -40,11 +40,11 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router basename="/React_Ecom_SS">
+      <Router>
         <GlobalStyle />
         <Header />
         <Routes>
-          <Route path="/React_Ecom_SS" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />

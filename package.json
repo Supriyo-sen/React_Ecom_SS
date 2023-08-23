@@ -1,8 +1,8 @@
 {
   "name": "ecom",
-  "homepage": "https://Supriyo-sen.github.io/React_Ecom_SS",
+  "homepage": "https://supriyo-sen.vercel.app/",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.12.1",
     "@testing-library/jest-dom": "^5.16.4",
@@ -19,8 +19,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
